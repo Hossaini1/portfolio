@@ -1,3 +1,3 @@
 # erste portfolio-seite
 
-[Link zu meiner Portfoli-Seite](https://hossaini1.github.io/portfolio/)
+[Visit my website](https://hossaini1.github.io/portfolio/)
