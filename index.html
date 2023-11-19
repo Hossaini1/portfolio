@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Page Beschreibung  -->
+    <meta
+      name="description"
+      content="Willkommen auf meinem Portfolio! Entdecken Sie meine vielfältige Sammlung von Projekten und Arbeiten in den Bereichen Webdevelopment, Frontend, Bsckend und mehr. Erhalten Sie einen Einblick in meine kreativen Fähigkeiten und Erfahrungen."
+    />
+    <!-- Favicon Icon -->
+    <link rel="icon" href="./images2/favicon-icon/favicon5.svg" type="image/svg+xml">
+    <!-- Css Link -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Mein Portfolio</title>
+
+    <!-- Fontawesome Script -->
+    <script defer src="https://kit.fontawesome.com/8cecfa6c4b.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Logo und Navigation in Header -->
+    <header  class="hauptElemente">
+      <div class="logoConatiner">
+        <a href="#home" class="logoA"> 
+          <span>&#706; </span>
+          <span>&#916;</span>
+          <span>&#950;</span>
+          <span>&#964;</span>
+          <span> /&#707</span>
+        </a>
+      </div>
+      <nav class="navContainer">
+        <input type="checkbox" id="menu">
+        <label for="menu"><i class="fa-solid fa-bars"></i></label>
+        <ul>
+          <li><a href="#">&#706;Home </a></li>
+          <li><a href="#" target="_blank" class="about">About </a>
+          </li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact" class="liContact">Contact/&#707;</a></li>
+        </ul>
+      </nav>
+
+
+    </header>
+
+
+    <!-- Main -->
+    <main class="hauptElemente">
+     
+      <section class="secText">
+        <h1>
+          Hi, <br />
+          I'm Ali<br />
+          <span class="webText"
+            >
+           Webdeveloper</span
+          >
+        </h1>
+      </section>
+
+      <section  class="secImages">
+        <img class="img1" src="./images2/css4-min.webp" alt="CSS Foto" />
+
+        <img class="img2" src="./images2/html4.webp" alt="HTML Foto" />
+      </section>
+    </main>
+
+    <!-- Cards unter Main-->
+
+    <section id="projects" class="hauptElemente cardsContainer1">
+      <h2>Projects</h2>
+
+
+    <div class="cardContainer ">
+     
+      <div class="card card1">
+        <img src="./images2/Responsive-Page.webp" alt="Project Foto1">
+        <a href="#card1">Details</a>
+
+        <div id="cardtext" class="cardText">
+          <h3>Responsive-Page</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quidem nisi esse quo libero. Eum blanditiis alias repellendus minus, ipsa quasi, eveniet obcaecati quaerat quos asperiores dicta natus amet iure?</p>
+
+        </div>
+
+      </div>
+      <div class="card card2">
+        <img src="./images2/design-page.webp" alt="Project Foto2">
+        <a href="#card1">Details</a>
+
+        <div class="cardText">
+          <h3>Design-Page</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quidem nisi esse quo libero. Eum blanditiis alias repellendus minus, ipsa quasi, eveniet obcaecati quaerat quos asperiores dicta natus amet iure?</p>
+
+        </div>
+      </div>
+      <div class="card card3">
+        <img src="./images2/freelence-Page.webp" alt="Project Foto3">
+        <a href="#card1">Details</a>
+
+        <div class="cardText">
+          <h3>Grid-Page</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quidem nisi esse quo libero. Eum blanditiis alias repellendus minus, ipsa quasi, eveniet obcaecati quaerat quos asperiores dicta natus amet iure?</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  Contact and Social Media in Footer -->
+  <footer class=" hauptElemente ">
+    <h3>Contact</h3>
+   <section class="contactContainer">
+    <div class="contact">
+      
+      <form id="contact" action="https://formspree.io/f/xaygaerg" name="contact" method="post">
+      
+        <input type="text" name="firstname" id="name" placeholder="Name" minlength="3" required>
+        
+        <input type="email" name="email" id="email" placeholder="Email" minlength="7" required>
+       
+        <textarea name="massege" id="massege" cols="21" rows="5" placeholder="Message" maxlength="700"></textarea>
+        <button type="submit">Submit</button>
+        <input type="reset" value="Reset">
+      </form>
+    </div>
+    <div class="socialMedia">
+
+      <p class="pStrong"><strong>Getting in touch is easy!</strong></p>
+      <a href="https://www.google.com/maps/place/D%C3%BCsseldorf/@51.2384547,6.8143502,11z/data=!3m1!4b1!4m6!3m5!1s0x47b8c97bf1465907:0x42760fc4a2a73b0!8m2!3d51.2277411!4d6.7734556!16zL20vMGhmN2w?entry=ttu"><i class="fa-solid fa-location-dot"></i> Düsseldorf, Germany</a>
+      <div class="find">
+      <p>find me on:</p>
+      <a href="https://github.com/Hossaini1" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+    </div>
+    </div>
+</section>
+<p class="copy">
+  <small>&copy; 21/11/2023</small>
+</p>
+  </footer >
+  </body>
+</html>
