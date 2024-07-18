@@ -37,6 +37,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+ 
   z-index: 100;
   animation: header 1.5s ease 1;
 }
@@ -104,6 +105,7 @@ li {
 }
 a {
   text-decoration: none;
+  
 }
 
 .liContact {
@@ -118,6 +120,9 @@ nav a {
   font-size: clamp(16px, var(--sm-md-lg), 28px);
   margin-right: 2em;
   color: var(--vierte-f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav a:hover {
@@ -147,7 +152,7 @@ main {
 }
 /* Animation Text in Main */
 .secText h1 {
-  font-size: 2.3em;
+  font-size: 2.4em;
 }
 
 .webText {
@@ -382,6 +387,7 @@ input[type="email"]:invalid {
   color: var(--vierte-f);
   margin-top: 3em;
 }
+ 
 
 .socialMedia i {
   margin: 0.2em;
@@ -423,11 +429,20 @@ p > strong {
   font-size: clamp(10px, var(--sm-md-lg), 25px);
 }
 
+
+
 /*  Media-Queries*/
 
 @media (max-width: 767px) {
+  .secText h1 {
+    font-size: 4em;
+  }
+  .nav-zeichen{
+    display: none;
+  }
   header {
     justify-content: space-between;
+    
   }
   main {
     flex-wrap: wrap;
@@ -438,33 +453,64 @@ p > strong {
   }
   .contact {
     width: 100%;
+    
+   
   }
+  input,form>button{
+    height: 4rem;
+    font-size: large;
+   
+  }
+  textarea{
+    height: 9rem;
+    font-size: large;
+  }
+
   .cardContainer {
     margin-top: -4.7em;
   }
+  form{
+    gap: 1.5rem;
+    
+  }
+.form-btn{
+  font-size: medium !important;
+  
+}
+
+.form-btn:hover{
+  transform: scale(.95) !important;
+}
+::placeholder{
+  font-size: medium;
+}
 
   nav {
     position: absolute;
     right: 0;
     margin-right: 2.5em;
+    
   }
   nav > ul {
     background-color: var(--dritte-f);
+    padding-top: 4em;
     display: none;
     flex-direction: column;
-    justify-content: end;
     position: absolute;
     right: 0;
-    width: 100vw;
-    height: 25vh;
-    justify-content: space-evenly;
+    width: 75vw;
+   
+    justify-content: flex-start;
+    gap: 4em;
     align-items: center;
     margin-right: -2.5em;
+    height: 100vh;
   }
 
   nav li > a {
     color: var(--zweite-f);
   }
+ 
 
   #menu:checked ~ ul {
     display: flex;
@@ -473,7 +519,9 @@ p > strong {
     display: block;
     position: relative;
     right: 0;
+   
   }
+ 
 
   .secImages {
     margin-top: -4em;
