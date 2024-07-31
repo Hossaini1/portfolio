@@ -6,6 +6,7 @@
   --dritte-f: #dfe2e9;
   --vierte-f: white;
   --sm-md-lg: 1.9vw;
+  --h1-f: 2.4em;
 }
 /*  Soft Reset */
 * {
@@ -152,7 +153,7 @@ main {
 }
 /* Animation Text in Main */
 .secText h1 {
-  font-size: 2.4em;
+  font-size: var(--h1-f);
 }
 
 .webText {
